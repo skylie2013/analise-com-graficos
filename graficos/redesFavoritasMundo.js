@@ -31,7 +31,7 @@ async function redesFavoritasMundo() {
     legend: {
       font: {
         color: getCSS("--primary-color"),
-        size: 16,
+        size: 10,
       },
     },
   };
