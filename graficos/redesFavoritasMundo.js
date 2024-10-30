@@ -1,17 +1,12 @@
 import { getCSS, criarGrafico } from "./common.js"
 
-
-criarGrafico(data, layout)
-
 async function redesFavoritasMundo() {
-  const url =
-    "https://raw.githubusercontent.com/guilhermeonrails/api/main/redes-favoritas.json";
+  const url ="https://raw.githubusercontent.com/guilhermeonrails/api/main/redes-favoritas.json";
   const res = await fetch(url);
   const dados = await res.json();
   const redes = Object.keys(dados);
   const valores = Object.values(dados);
 
-  // Criar o gráfico de pizza
   const data = [
     {
       values: valores,
